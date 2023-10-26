@@ -12,9 +12,12 @@
         
         function Ranqueada(vitorias ,derrotas  ){
             alert("Descubra seu nivel")
+            
             var vitorias = prompt("Digite a quantidade de Vitórias!")
             var derrotas = prompt("Digite a quantidade de Derrotas!")
+   
     while(vitorias <= 9){
+        
         if(derrotas <= 9){
         document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível FERRO! <br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
         break

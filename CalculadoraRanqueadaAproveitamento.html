@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE PARTIDAS RANQUEADAS</title>
+</head>
+<body>
+    <script>
+        
+        
+        
+        function Ranqueada(vitorias ,derrotas  ){
+            alert("Descubra seu nivel")
+            var vitorias = prompt("Digite a quantidade de Vitórias!")
+            var derrotas = prompt("Digite a quantidade de Derrotas!")
+    while(vitorias <= 9){
+        if(derrotas <= 9){
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível FERRO! <br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+        break
+        }
+    }
+    if(vitorias >= 10 & vitorias <= 20 ){ 
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas está no nível BRONZE!<br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+    }
+    if(vitorias >= 21 & vitorias <= 50){
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível PRATA!<br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+    }
+    if(vitorias >= 51 & vitorias <= 80){
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível  OURO!<br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+    }
+    if(vitorias >= 81 & vitorias <= 90){
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível DIAMANTE!<br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+    }
+    if(vitorias >= 91 & vitorias <= 100){
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível LENDÁRIO!<br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+    }
+    if(vitorias >= 101){
+        document.write(`O Herói tem saldo de ${vitorias} vitórias e ${derrotas} derrotas e está no nível IMORTAL!<br> Aproveitamento de: ${(vitorias / derrotas *25).toFixed(2)}%`)
+    }
+    return vitorias , derrotas
+
+    
+}
+  Ranqueada();
+    </script>
+    
+</body>
+</html>

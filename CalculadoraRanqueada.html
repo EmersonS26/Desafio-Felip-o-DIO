@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA DE PARTIDAS RANQUEADAS</title>
+</head>
+<body>
+    <script>
+        
+        
+        
+        function Ranqueada(vitorias ,derrotas  ){
+            alert("Calcule seu nivel")
+            var vitorias = prompt("Digite a quantidade de Vitórias!")
+            var derrotas = prompt("Digite a quantidade de Derrotas!")
+    while(vitorias <= 9){
+        if(derrotas <= 9){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas e está no nível FERRO!`)
+        break
+        }
+    }
+    if(vitorias >= 10 & vitorias <= 20 ){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas está no nível BRONZE!`)
+    }
+    if(vitorias >= 21 & vitorias <= 50){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas e está no nível PRATA!`)
+    }
+    if(vitorias >= 51 & vitorias <= 80){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas e está no nível  OURO!`)
+    }
+    if(vitorias >= 81 & vitorias <= 90){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas e está no nível DIAMANTE!`)
+    }
+    if(vitorias >= 91 & vitorias <= 100){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas e está no nível LENDÁRIO!`)
+    }
+    if(vitorias >= 101){
+        document.write(`O Herói tem saldo de vitória de ${vitorias} vitórias e ${derrotas} derrotas e está no nível IMORTAL!`)
+    }
+    return vitorias , derrotas
+
+    
+}
+  Ranqueada();
+    </script>
+    
+</body>
+</html>
